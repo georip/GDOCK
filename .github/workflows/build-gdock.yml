@@ -51,8 +51,7 @@ jobs:
     - name: Clone source code
       run: |
         git clone https://github.com/coolsnowwolf/lede lede
-        cd lede && git clone https://github.com/georip/luci-theme-darkmatter package
-        
+        cd lede/package && git clone https://github.com/georip/luci-theme-darkmatter 
 
     - name: Update feeds
       run: cd lede && ./scripts/feeds update -a

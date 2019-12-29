@@ -61,7 +61,7 @@ jobs:
 
     - name: Load custom configuration
       run: |
-        cp -f gdock128custom.config ./lede/.config
+        cp -f g191229.config ./lede/.config
         chmod +x diy.sh
         cd lede
         ../diy.sh
